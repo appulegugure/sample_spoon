@@ -24,10 +24,6 @@ button {
   background: transparent;
 }
 
-body {
-  min-height: -webkit-fill-available;
-}
-
 @media screen and (min-width: 599px) {
   .main-content-wrap {
     width: 100%;
