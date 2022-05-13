@@ -49,7 +49,7 @@ button {
 }
 
 .main-content-wrap header nav.pc .header-right-menu {
-  position: absolute;
+  position: fixed;
   top: 10px;
   right: 10px;
   z-index: 950;
@@ -70,7 +70,8 @@ button {
 
 .main-content-wrap header nav.pc .header-right-menu .hamburger-menu .menu-btn #one,
 .main-content-wrap header nav.pc .header-right-menu .hamburger-menu .menu-btn #two,
-.main-content-wrap header nav.pc .header-right-menu .hamburger-menu .menu-btn #three {
+.main-content-wrap header nav.pc .header-right-menu .hamburger-menu .menu-btn #three,
+.main-content-wrap header nav.pc .header-right-menu .hamburger-menu .menu-btn #four {
   content: '';
   display: block;
   height: 3px;
@@ -104,8 +105,18 @@ button {
   top: 13.5px;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in 0s;
+}
+
+.main-content-wrap header nav.pc .header-right-menu .hamburger-menu .menu-btn span#four {
+  top: 13.5px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
   -webkit-transition: all 0.3s ease-in 0s;
   transition: all 0.3s ease-in 0s;
 }
@@ -222,6 +233,7 @@ button {
   top: 50%;
   left: 0%;
   z-index: 500;
+  opacity: 0;
 }
 
 .main-content-wrap main .page-3 img.menu {
@@ -255,6 +267,7 @@ button {
   top: 50%;
   right: 0%;
   z-index: 500;
+  opacity: 0;
 }
 
 .main-content-wrap main .page-4 img.menu {
@@ -288,6 +301,7 @@ button {
   top: 50%;
   left: 0%;
   z-index: 500;
+  opacity: 0;
 }
 
 .main-content-wrap main .page-5 img.menu {
@@ -321,6 +335,7 @@ button {
   top: 50%;
   right: 0%;
   z-index: 500;
+  opacity: 0;
 }
 
 .main-content-wrap main .page-6 img.menu {
@@ -349,6 +364,8 @@ button {
 }
 
 .main-content-wrap main .page-7 .page-7-insta-wrap {
+  min-width: 90%;
+  max-width: 100%;
   width: 100%;
   height: 300px;
   padding: 0 100px;
@@ -455,5 +472,37 @@ button {
 .main-content-wrap footer address .tel-logo {
   width: 10%;
   height: 10%;
+}
+
+.stanpanime {
+  -webkit-animation: stanp .5s ease-in 0s 1 forwards normal;
+          animation: stanp .5s ease-in 0s 1 forwards normal;
+  animation-timeline: stanping;
+}
+
+@-webkit-keyframes stanp {
+  0% {
+    -webkit-transform: scale(2, 2);
+            transform: scale(2, 2);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+@keyframes stanp {
+  0% {
+    -webkit-transform: scale(2, 2);
+            transform: scale(2, 2);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -42,7 +42,7 @@ button{border: 0px solid black;background: transparent;}
             .header-right-menu{ 
                 // box
                 // position
-                position: absolute;
+                position:fixed;
                 top: 10px;
                 right: 10px;
                 z-index: 950;
@@ -65,7 +65,8 @@ button{border: 0px solid black;background: transparent;}
 
                         #one,
                         #two,
-                        #three
+                        #three,
+                        #four
                         {
                             content: '';
                             display: block;
@@ -93,7 +94,14 @@ button{border: 0px solid black;background: transparent;}
                         span#three {
                             top: 13.5px;
                             transform: rotate(0deg);
-                            transform-origin: 0 0;
+                            transform-origin: 50% 50%;
+                            transition: all 0.3s ease-in 0s;
+                        }
+
+                        span#four {
+                            top: 13.5px;
+                            transform: rotate(0deg);
+                            transform-origin: 50% 50%;
                             transition: all 0.3s ease-in 0s;
                         }
                     }
@@ -234,7 +242,7 @@ button{border: 0px solid black;background: transparent;}
 
             img.niku{
                 width: 40%;
-                height:auto;
+                height:auto;    
                 // height: 100vh;
                 object-fit:cover;
                 // object-fit: cover;
@@ -242,6 +250,10 @@ button{border: 0px solid black;background: transparent;}
                 top: 50%;
                 left: 0%;
                 z-index: 500;
+                opacity: 0;
+
+                
+
                 
             }
             img.menu{
@@ -264,6 +276,7 @@ button{border: 0px solid black;background: transparent;}
             display: flex;
             justify-content: left;
             position: relative;
+            
 
             img.niku{
                 width: 40%;
@@ -275,7 +288,7 @@ button{border: 0px solid black;background: transparent;}
                 top: 50%;
                 right: 0%;
                 z-index: 500;
-                
+                opacity: 0;
             }
             img.menu{
                 margin-left: 10px;
@@ -307,6 +320,7 @@ button{border: 0px solid black;background: transparent;}
                 top: 50%;
                 left: 0%;
                 z-index: 500;
+                opacity: 0;
                 
             }
             img.menu{
@@ -339,6 +353,7 @@ button{border: 0px solid black;background: transparent;}
                 top: 50%;
                 right: 0%;
                 z-index: 500;
+                opacity: 0;
                 
             }
             img.menu{
@@ -365,6 +380,8 @@ button{border: 0px solid black;background: transparent;}
             }
 
             .page-7-insta-wrap{
+                min-width: 90%;
+                max-width: 100%;
                 width: 100%;
                 height: 300px;
                 // position: relative;
@@ -489,4 +506,26 @@ button{border: 0px solid black;background: transparent;}
     }
 }
 
+.stanpanime{
+    animation: stanp .5s ease-in 0s 1 forwards normal;
+    animation-timeline: stanping ;
+}
 
+@keyframes stanp {
+    0%{
+        transform: scale(2,2);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1,1);
+        opacity: 1;
+    }
+}
+
+// @scroll-timeline stanping {
+//     // source: auto;
+//     // orientation:vertical;
+//     scroll-offsets:
+//     selector(#stanp_point) start 0,
+//     selector(#stanp_point) end 0;
+// }
