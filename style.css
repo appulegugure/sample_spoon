@@ -516,7 +516,7 @@ button {
   }
   .main-content-wrap header nav.mobile {
     width: 100%;
-    min-height: 100vh;
+    height: calc(100vh + 30px);
     position: fixed;
     top: 0;
     left: 0;
