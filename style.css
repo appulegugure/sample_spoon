@@ -24,6 +24,10 @@ button {
   background: transparent;
 }
 
+body {
+  min-height: -webkit-fill-available;
+}
+
 @media screen and (min-width: 599px) {
   .main-content-wrap {
     width: 100%;
@@ -516,7 +520,7 @@ button {
   }
   .main-content-wrap header nav.mobile {
     width: 100%;
-    height: calc(100vh + 300px);
+    min-height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
