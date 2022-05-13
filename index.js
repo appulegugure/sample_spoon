@@ -7,15 +7,15 @@ const nav_menu = document.getElementsByClassName('mobile')[0]
 
 document.getElementsByClassName('header-right-menu')[0].addEventListener('click',()=>{
   console.log('button clik')
-  console.log(etComputedStyle(nav_menu).getPropertyValue('transform').ty)
-  if(getComputedStyle(nav_menu).getPropertyValue('transform') <= window.innerWidth){
+  
+  if(getComputedStyle(nav_menu).getPropertyValue('transform') === `matrix(1, 0, 0, 1, ${window.innerWidth}, 0)`){
     console.log('hi')
     nav_menu.style['transform'] = 'translateX(0%)'
     four.style['transform'] = 'rotate(-45deg)'
     three.style['transform'] = 'rotate(45deg)'
     two.style['width'] = '0px'
     one.style['width'] = '0px'
-  }if (getComputedStyle(nav_menu).getPropertyValue('transform') >= window.innerWidth) {
+  }if (getComputedStyle(nav_menu).getPropertyValue('transform') === 'matrix(1, 0, 0, 1, 0, 0)') {
     console.log('hoi')
     nav_menu.style['transform'] = 'translateX(100%)'
     four.style['transform'] = 'rotate(0deg)'
@@ -100,3 +100,7 @@ const scroll_trigger = window.addEventListener('scroll',function(){
   // }
   
 })
+
+
+// initial
+window.onbeforeunload = function () { window.scrollTo(0,0);}
