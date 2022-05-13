@@ -1,24 +1,29 @@
 // register Element
-nav_menu = document.getElementsByClassName('mobile')[0]
+
+const nav_menu = document.getElementsByClassName('mobile')[0]
 
 
 
 
 document.getElementsByClassName('header-right-menu')[0].addEventListener('click',()=>{
-  if(getComputedStyle(nav_menu).getPropertyValue('transform') === 'matrix(1, 0, 0, 1, 639, 0)'){
+  console.log('button clik')
+  console.log(etComputedStyle(nav_menu).getPropertyValue('transform').ty)
+  if(getComputedStyle(nav_menu).getPropertyValue('transform') <= window.innerWidth){
+    console.log('hi')
     nav_menu.style['transform'] = 'translateX(0%)'
     four.style['transform'] = 'rotate(-45deg)'
     three.style['transform'] = 'rotate(45deg)'
     two.style['width'] = '0px'
     one.style['width'] = '0px'
-  }if (getComputedStyle(nav_menu).getPropertyValue('transform') === 'matrix(1, 0, 0, 1, 0, 0)') {
+  }if (getComputedStyle(nav_menu).getPropertyValue('transform') >= window.innerWidth) {
+    console.log('hoi')
     nav_menu.style['transform'] = 'translateX(100%)'
     four.style['transform'] = 'rotate(0deg)'
     three.style['transform'] = 'rotate(0deg)'
     two.style['width'] = '25px'
     one.style['width'] = '25px'
   } else {
-    
+    console.log('else')
   }
 }
 )
@@ -30,18 +35,18 @@ const two = document.querySelectorAll('.menu-btn span#two')[0]
 const three = document.querySelectorAll('.menu-btn span#three')[0]
 const four = document.querySelectorAll('.menu-btn span#four')[0]
 
-document.querySelectorAll('.header-right-menu')[0].addEventListener('click',()=>{
-  console.log('click')
-  if (nav_menu.style['transform'] == 'translateX(100%)'){
-    console.log('100%')
-  }else if(nav_menu.style['transform'] == 'translateX(0%)'){
-    console.log('0%')
-  }else{
+// document.querySelectorAll('.header-right-menu')[0].addEventListener('click',()=>{
+//   console.log('click')
+//   if (nav_menu.style['transform'] == 'translateX(100%)'){
+//     console.log('100%')
+//   }else if(nav_menu.style['transform'] == 'translateX(0%)'){
+//     console.log('0%')
+//   }else{
 
-  }
+//   }
   
   
-})
+// })
 
 
 //scroll-animation
