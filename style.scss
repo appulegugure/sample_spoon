@@ -741,7 +741,7 @@ button{border: 0px solid black;background: transparent;}
             background: #333333;
 
             display: flex;
-            justify-content: right;
+            justify-content:right;
             position: relative;
 
             img.niku{
@@ -754,14 +754,11 @@ button{border: 0px solid black;background: transparent;}
                 top: 50%;
                 left: 0%;
                 z-index: 500;
-                opacity: 0;
-
-                
-
-                
+                opacity: 0;                
             }
             img.menu{
                 margin-right: 10px;
+                margin-left: auto;
                 margin-bottom: 20px;
                 width: 90%;
                 height:auto;
@@ -829,6 +826,7 @@ button{border: 0px solid black;background: transparent;}
             }
             img.menu{
                 margin-right: 10px;
+                margin-left: auto;
                 margin-bottom: 20px;
                 width: 90%;
                 height:auto;

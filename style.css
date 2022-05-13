@@ -618,6 +618,7 @@ button {
   }
   .main-content-wrap main .page-3 img.menu {
     margin-right: 10px;
+    margin-left: auto;
     margin-bottom: 20px;
     width: 90%;
     height: auto;
@@ -680,6 +681,7 @@ button {
   }
   .main-content-wrap main .page-5 img.menu {
     margin-right: 10px;
+    margin-left: auto;
     margin-bottom: 20px;
     width: 90%;
     height: auto;
