@@ -1012,10 +1012,21 @@ button{border: 0px solid black;background: transparent;}
 
 .stanpanime{
     animation: stanp .5s ease-in 0s 1 forwards normal;
+    -webkit-animation: stanp .5s ease-in 0s 1 forwards normal;
     animation-timeline: stanping ;
 }
 
 @keyframes stanp {
+    0%{
+        transform: scale(2,2);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1,1);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes stanp {
     0%{
         transform: scale(2,2);
         opacity: 0;

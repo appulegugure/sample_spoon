@@ -831,12 +831,12 @@ button {
 }
 
 .stanpanime {
+  animation: stanp .5s ease-in 0s 1 forwards normal;
   -webkit-animation: stanp .5s ease-in 0s 1 forwards normal;
-          animation: stanp .5s ease-in 0s 1 forwards normal;
   animation-timeline: stanping;
 }
 
-@-webkit-keyframes stanp {
+@keyframes stanp {
   0% {
     -webkit-transform: scale(2, 2);
             transform: scale(2, 2);
@@ -849,7 +849,7 @@ button {
   }
 }
 
-@keyframes stanp {
+@-webkit-keyframes stanp {
   0% {
     -webkit-transform: scale(2, 2);
             transform: scale(2, 2);
