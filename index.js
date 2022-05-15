@@ -30,6 +30,12 @@ document.getElementsByClassName('header-right-menu')[0].addEventListener('click'
 }
 )
 
+// document.getElementsByClassName('header-right-menu')[0].addEventListener('click',function(){
+//   console.log('click')
+//   nav_menu.classList.toggle('menu-open')
+//   nav_menu.classList.toggle('menu-close')
+// })
+
 
 // test
 const one = document.querySelectorAll('.menu-btn span#one')[0]

@@ -1,7 +1,7 @@
 
 *{margin: 0;padding: 0;box-sizing: border-box;line-height: 1em;}
 ul{list-style-type: none;}
-a{text-decoration: none;}
+a{text-decoration: none; color: #333333;}
 input{outline: none;}
 button{border: 0px solid black;background: transparent;}
 // body{min-height:-webkit-fill-available;}
@@ -621,8 +621,10 @@ button{border: 0px solid black;background: transparent;}
             left: 0;
             z-index: 900;
             
-            background: blue;
+            background: rgb(75,75,225);
 
+
+            will-change: transform;
             transform: translateX(100%);
             transition: all .5s ease-in 0s;
             
@@ -716,6 +718,7 @@ button{border: 0px solid black;background: transparent;}
             background-color: #333333;
             background-image: url(./asset/design/12.png);
             background-size: cover;
+            background-position: 50% 50%;
             .about-content-wrap{
                 width: 100%;
                 padding: 10px 100px;
@@ -732,13 +735,18 @@ button{border: 0px solid black;background: transparent;}
                 }
             }
         }
+
+        .menu-bg{
+            background-color: #333333;
+            background-image: url(./asset/design/30.png);
+            background-size: cover;
         .page-3{
             width: 100%;
             // height: 100vh;
             height: auto;
             // border: 1px solid black;
 
-            background: #333333;
+            background: transparent;
 
             display: flex;
             justify-content:right;
@@ -772,7 +780,7 @@ button{border: 0px solid black;background: transparent;}
             height: auto;
             // border: 1px solid black;
 
-            background: #333333;
+            background: transparent;
 
             display: flex;
             justify-content: left;
@@ -805,7 +813,7 @@ button{border: 0px solid black;background: transparent;}
             height: auto;
             // border: 1px solid black;
 
-            background: #333333;
+            background:transparent;
 
             display: flex;
             justify-content: right;
@@ -839,7 +847,7 @@ button{border: 0px solid black;background: transparent;}
             height: auto;
             // border: 1px solid black;
 
-            background: #333333;
+            background: transparent;
 
             display: flex;
             justify-content: left;
@@ -867,6 +875,9 @@ button{border: 0px solid black;background: transparent;}
             }
             
         }
+        }
+
+
         .page-7{
             width: 100%;
             height: 60vh;
@@ -1004,6 +1015,31 @@ button{border: 0px solid black;background: transparent;}
             .tel-logo{
                 width: 10%;
                 height: 10%;
+        
+            }
+
+            .email{
+                display: flex;
+                align-items: center;
+                svg{
+                    color: #e7e7e7;
+                }
+                span{
+                    color: #e7e7e7;
+                }
+                
+            }
+
+            .tel{
+                display: flex;
+                align-items: center;
+                svg{
+                    color: #e7e7e7;
+                }
+                span{
+                    color: #e7e7e7;
+                }
+                
             }
         }
     }
@@ -1011,6 +1047,7 @@ button{border: 0px solid black;background: transparent;}
 }
 
 .stanpanime{
+    will-change: transform,opacity;
     animation: stanp .5s ease-in 0s 1 forwards normal;
     -webkit-animation: stanp .5s ease-in 0s 1 forwards normal;
     animation-timeline: stanping ;
@@ -1044,3 +1081,11 @@ button{border: 0px solid black;background: transparent;}
 //     selector(#stanp_point) start 0,
 //     selector(#stanp_point) end 0;
 // }
+
+.menu-open{
+    right: 0;
+}
+
+.menu-open{
+    right: -100%;
+}
