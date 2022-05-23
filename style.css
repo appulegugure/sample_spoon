@@ -115,12 +115,13 @@ button {
   }
   .main-content-wrap header nav.mobile {
     width: 100%;
-    height: calc(100vh + 300px);
+    height: calc(100vh + 30px);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 900;
-    background: #4b4bff;
+    background: #4b4be1;
+    will-change: transform;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
     -webkit-transition: all .5s ease-in 0s;
@@ -173,15 +174,27 @@ button {
   }
   .main-content-wrap main .page-2 {
     width: 100%;
-    height: 100vh;
     position: relative;
     background-color: #333333;
     background-image: url(./asset/design/12.png);
     background-size: cover;
+    background-position: 50% 50%;
+  }
+  .main-content-wrap main .page-2 .forhungury {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .main-content-wrap main .page-2 .about-content-wrap {
     width: 100%;
     padding: 10px 100px;
+    margin-bottom: 400px;
   }
   .main-content-wrap main .page-2 .about-content-wrap h1 {
     text-align: center;
@@ -192,10 +205,32 @@ button {
     line-height: 30px;
     color: white;
   }
-  .main-content-wrap main .page-3 {
+  .main-content-wrap main .page-2 .dog-cook {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  .main-content-wrap main .page-2 .dog-cook img {
+    width: 50%;
+    bottom: 0px;
+    right: 0;
+  }
+  .main-content-wrap main .menu-bg {
+    background-color: #333333;
+    background-image: url(./asset/design/30.png);
+    background-size: cover;
+  }
+  .main-content-wrap main .menu-bg .page-3 {
     width: 100%;
     height: auto;
-    background: #333333;
+    background: transparent;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -204,7 +239,7 @@ button {
             justify-content: right;
     position: relative;
   }
-  .main-content-wrap main .page-3 img.niku {
+  .main-content-wrap main .menu-bg .page-3 img.niku {
     width: 40%;
     height: auto;
     -o-object-fit: cover;
@@ -215,18 +250,19 @@ button {
     z-index: 500;
     opacity: 0;
   }
-  .main-content-wrap main .page-3 img.menu {
+  .main-content-wrap main .menu-bg .page-3 img.menu {
     margin-right: 10px;
+    margin-left: auto;
     margin-bottom: 20px;
     width: 90%;
     height: auto;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .main-content-wrap main .page-4 {
+  .main-content-wrap main .menu-bg .page-4 {
     width: 100%;
     height: auto;
-    background: #333333;
+    background: transparent;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -235,7 +271,7 @@ button {
             justify-content: left;
     position: relative;
   }
-  .main-content-wrap main .page-4 img.niku {
+  .main-content-wrap main .menu-bg .page-4 img.niku {
     width: 40%;
     height: auto;
     -o-object-fit: cover;
@@ -246,7 +282,7 @@ button {
     z-index: 500;
     opacity: 0;
   }
-  .main-content-wrap main .page-4 img.menu {
+  .main-content-wrap main .menu-bg .page-4 img.menu {
     margin-left: 10px;
     margin-bottom: 20px;
     width: 90%;
@@ -254,10 +290,10 @@ button {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .main-content-wrap main .page-5 {
+  .main-content-wrap main .menu-bg .page-5 {
     width: 100%;
     height: auto;
-    background: #333333;
+    background: transparent;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -266,7 +302,7 @@ button {
             justify-content: right;
     position: relative;
   }
-  .main-content-wrap main .page-5 img.niku {
+  .main-content-wrap main .menu-bg .page-5 img.niku {
     width: 40%;
     height: auto;
     -o-object-fit: cover;
@@ -277,18 +313,19 @@ button {
     z-index: 500;
     opacity: 0;
   }
-  .main-content-wrap main .page-5 img.menu {
+  .main-content-wrap main .menu-bg .page-5 img.menu {
     margin-right: 10px;
+    margin-left: auto;
     margin-bottom: 20px;
     width: 90%;
     height: auto;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .main-content-wrap main .page-6 {
+  .main-content-wrap main .menu-bg .page-6 {
     width: 100%;
     height: auto;
-    background: #333333;
+    background: transparent;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -297,7 +334,7 @@ button {
             justify-content: left;
     position: relative;
   }
-  .main-content-wrap main .page-6 img.niku {
+  .main-content-wrap main .menu-bg .page-6 img.niku {
     width: 40%;
     height: auto;
     -o-object-fit: cover;
@@ -308,13 +345,34 @@ button {
     z-index: 500;
     opacity: 0;
   }
-  .main-content-wrap main .page-6 img.menu {
-    margin-right: 10px;
+  .main-content-wrap main .menu-bg .page-6 img.menu {
+    margin-left: 10px;
     margin-bottom: 20px;
     width: 90%;
     height: auto;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .main-content-wrap main .menu-bg .menu-footer .grandmenu {
+    display: block;
+    margin: 0 auto;
+  }
+  .main-content-wrap main .menu-bg .menu-footer .feature-of-spoon {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .main-content-wrap main .menu-bg .menu-footer .menu-footer-f {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-content-wrap main .menu-bg .menu-footer .menu-footer-f img {
+    width: 30%;
+    margin: 5px;
   }
   .main-content-wrap main .page-7 {
     width: 100%;
@@ -351,40 +409,26 @@ button {
     color: white;
   }
   .main-content-wrap main .page-7 .page-7-wadai-no {
-    padding: 10px 10px;
+    display: none;
   }
-  .main-content-wrap main .page-7 .page-7-wadai-no .wadai-no {
-    width: 100%;
-    background: radial-gradient(#ffe4b0, orange 80%);
-    padding: 5px;
-  }
-  .main-content-wrap main .page-7 .page-7-wadai-no .wadai-no h1 {
-    text-align: center;
-    margin-bottom: 5px;
-  }
-  .main-content-wrap main .page-7 .page-7-wadai-no .wadai-no .imasugu {
-    width: 30%;
-    margin: 0 auto;
+  .main-content-wrap main .page-7-logo {
     background: #333333;
-    border-radius: 26px;
-    padding: 3px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .main-content-wrap main .page-7 .page-7-wadai-no .wadai-no .imasugu .ima {
-    padding: 5px 5px;
-    position: relative;
-    color: white;
-    font-size: 0.5em;
-  }
-  .main-content-wrap main .page-7 .page-7-wadai-no .wadai-no .imasugu .ima::after {
-    content: "▷";
-    position: absolute;
-    right: 10px;
-    color: white;
+  .main-content-wrap main .page-7-logo img {
+    display: block;
+    width: 30%;
   }
   .main-content-wrap footer {
     width: 100%;
     height: 100vh;
     padding-top: 20px;
+    position: relative;
     background-image: url(./asset/design/27.jpg);
     background-size: cover;
   }
@@ -395,15 +439,22 @@ button {
   }
   .main-content-wrap footer .via {
     width: 100%;
-    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    padding-right: 20px;
   }
   .main-content-wrap footer .via img {
-    width: 100%;
+    width: 70%;
     height: auto;
     -o-object-fit: cover;
        object-fit: cover;
   }
   .main-content-wrap footer .footer-logo {
+    width: 30%;
     padding: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -416,7 +467,7 @@ button {
             align-items: center;
   }
   .main-content-wrap footer .footer-logo img {
-    width: 40%;
+    width: 100%;
     height: auto;
     -o-object-fit: cover;
        object-fit: cover;
@@ -424,6 +475,34 @@ button {
   .main-content-wrap footer address .tel-logo {
     width: 10%;
     height: 10%;
+  }
+  .main-content-wrap footer address .email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-content-wrap footer address .email svg {
+    color: #e7e7e7;
+  }
+  .main-content-wrap footer address .email span {
+    color: #e7e7e7;
+  }
+  .main-content-wrap footer address .tel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-content-wrap footer address .tel svg {
+    color: #e7e7e7;
+  }
+  .main-content-wrap footer address .tel span {
+    color: #e7e7e7;
   }
 }
 
@@ -583,6 +662,9 @@ button {
     background-size: cover;
     background-position: 50% 50%;
   }
+  .main-content-wrap main .page-2 .forhungury {
+    display: none;
+  }
   .main-content-wrap main .page-2 .about-content-wrap {
     width: 100%;
     padding: 10px 100px;
@@ -595,6 +677,12 @@ button {
     overflow-wrap: break-word;
     line-height: 30px;
     color: white;
+  }
+  .main-content-wrap main .page-2 .dog-cook {
+    display: none;
+  }
+  .main-content-wrap main .page-2 .dog-cook img {
+    display: none;
   }
   .main-content-wrap main .menu-bg {
     background-color: #333333;
@@ -727,6 +815,9 @@ button {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .main-content-wrap main .menu-footer {
+    display: none;
+  }
   .main-content-wrap main .page-7 {
     width: 100%;
     height: 60vh;
@@ -791,6 +882,9 @@ button {
     position: absolute;
     right: 10px;
     color: white;
+  }
+  .main-content-wrap .page-7-logo {
+    display: none;
   }
   .main-content-wrap footer {
     width: 100%;

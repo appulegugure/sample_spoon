@@ -113,14 +113,16 @@ button{border: 0px solid black;background: transparent;}
 
         nav.mobile{
             width: 100%;
-            height: calc(100vh + 300px);
+            height:calc(100vh + 30px);
             position: fixed;
             top: 0;
             left: 0;
             z-index: 900;
             
-            background: rgb(75, 75, 255);
+            background: rgb(75,75,225);
 
+
+            will-change: transform;
             transform: translateX(100%);
             transition: all .5s ease-in 0s;
             
@@ -205,7 +207,7 @@ button{border: 0px solid black;background: transparent;}
             //box
             width: 100%;
             // height: 100vh;
-            height: 100vh;
+            // height: 100vh;
             //position
             position: relative;
             //design
@@ -214,10 +216,21 @@ button{border: 0px solid black;background: transparent;}
             background-color: #333333;
             background-image: url(./asset/design/12.png);
             background-size: cover;
+            background-position: 50% 50%;
+            .forhungury{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                img{
+
+                }
+            }
             .about-content-wrap{
                 width: 100%;
                 padding: 10px 100px;
-                
+                margin-bottom: 400px;
+
                 h1{
                     text-align: center;
                     color: white;
@@ -229,17 +242,40 @@ button{border: 0px solid black;background: transparent;}
                     color: white;
                 }
             }
+
+            .dog-cook{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+            
+                
+
+                
+                img{
+                    width: 50%;
+                    // position: absolute;
+                    bottom: 0px;
+                    right: 0;
+                    
+                }
+            }
         }
+
+        .menu-bg{
+            background-color: #333333;
+            background-image: url(./asset/design/30.png);
+            background-size: cover;
         .page-3{
             width: 100%;
             // height: 100vh;
             height: auto;
             // border: 1px solid black;
 
-            background: #333333;
+            background: transparent;
 
             display: flex;
-            justify-content: right;
+            justify-content:right;
             position: relative;
 
             img.niku{
@@ -252,14 +288,11 @@ button{border: 0px solid black;background: transparent;}
                 top: 50%;
                 left: 0%;
                 z-index: 500;
-                opacity: 0;
-
-                
-
-                
+                opacity: 0;                
             }
             img.menu{
                 margin-right: 10px;
+                margin-left: auto;
                 margin-bottom: 20px;
                 width: 90%;
                 height:auto;
@@ -273,7 +306,7 @@ button{border: 0px solid black;background: transparent;}
             height: auto;
             // border: 1px solid black;
 
-            background: #333333;
+            background: transparent;
 
             display: flex;
             justify-content: left;
@@ -306,7 +339,7 @@ button{border: 0px solid black;background: transparent;}
             height: auto;
             // border: 1px solid black;
 
-            background: #333333;
+            background:transparent;
 
             display: flex;
             justify-content: right;
@@ -327,6 +360,7 @@ button{border: 0px solid black;background: transparent;}
             }
             img.menu{
                 margin-right: 10px;
+                margin-left: auto;
                 margin-bottom: 20px;
                 width: 90%;
                 height:auto;
@@ -339,7 +373,7 @@ button{border: 0px solid black;background: transparent;}
             height: auto;
             // border: 1px solid black;
 
-            background: #333333;
+            background: transparent;
 
             display: flex;
             justify-content: left;
@@ -359,14 +393,43 @@ button{border: 0px solid black;background: transparent;}
                 
             }
             img.menu{
-                margin-right: 10px;
+                margin-left: 10px;
                 margin-bottom: 20px;
                 width: 90%;
                 height:auto;
                 object-fit:cover;
             }
+            
         }
+        
+
+        .menu-footer{
+
+            .grandmenu{
+                display: block;
+                margin: 0 auto;
+            }
+
+            .feature-of-spoon{
+                display: block;
+                margin: 0 auto;
+                width: 90%;
+            }
+
+            .menu-footer-f{
+                display: flex;
+                justify-content: center;
+
+                img{
+                    width: 30%;
+                    margin: 5px;
+                }
+            }
+        }
+        }
+
         .page-7{
+        
             width: 100%;
             height: 60vh;
             background: #333333;
@@ -382,6 +445,7 @@ button{border: 0px solid black;background: transparent;}
             }
 
             .page-7-insta-wrap{
+
                 min-width: 90%;
                 max-width: 100%;
                 width: 100%;
@@ -409,44 +473,18 @@ button{border: 0px solid black;background: transparent;}
             }
             
             .page-7-wadai-no{
-                
-                padding: 10px 10px;
-
-                .wadai-no{
-                    width: 100%;
-                    background: radial-gradient(rgb(255, 228, 176),orange 80%) ;
-                    padding: 5px;
-                    h1{
-                        text-align: center;
-                        margin-bottom: 5px;
-                    }
-                    .imasugu{
-                        width: 30%;
-                        margin: 0 auto;
-                        background: #333333;
-                        border-radius: 26px;
-                        padding: 3px;
-                        .ima{
-
-                            padding: 5px 5px;
-
-                            position: relative;
-
-                            color: white;
-                            font-size: 0.5em;
-                            &::after{
-
-                                content: "▷";
-
-                                position: absolute;
-                                right: 10px;
-                                color: rgb(255, 255, 255);
-                            }
-                        }
-                    }
-                }
+                display: none;
             }
         
+        }
+        .page-7-logo{
+            background: #333333;
+            display: flex;
+            justify-content: center;
+            img{
+                display: block;
+                    width: 30%;
+            }
         }
     }
 
@@ -454,6 +492,7 @@ button{border: 0px solid black;background: transparent;}
         width: 100%;
         height: 100vh;
         padding-top:20px ;
+        position: relative;
 
         background-image: url(./asset/design/27.jpg);
         background-size: cover;
@@ -468,22 +507,25 @@ button{border: 0px solid black;background: transparent;}
         .via{
             //box
             width: 100%;
+            display: flex;
+            justify-content: right;
+            padding-right: 20px;
             // height: 300px;
             
             //position
-            margin: 0 auto;
+            
 
             // background: slateblue;
-
             img{
-                width: 100%;
+                width: 70%;
                 height: auto;
                 object-fit:cover;
+                
             }
         }
 
         .footer-logo{
-
+            width: 30%;
             padding: 20px;
             display: flex;
             justify-content: center;
@@ -491,7 +533,7 @@ button{border: 0px solid black;background: transparent;}
         
             img{
 
-                width: 40%;
+                width: 100%;
                 height: auto;
                 object-fit: cover;
                 
@@ -503,6 +545,31 @@ button{border: 0px solid black;background: transparent;}
             .tel-logo{
                 width: 10%;
                 height: 10%;
+        
+            }
+
+            .email{
+                display: flex;
+                align-items: center;
+                svg{
+                    color: #e7e7e7;
+                }
+                span{
+                    color: #e7e7e7;
+                }
+                
+            }
+
+            .tel{
+                display: flex;
+                align-items: center;
+                svg{
+                    color: #e7e7e7;
+                }
+                span{
+                    color: #e7e7e7;
+                }
+                
             }
         }
     }
@@ -719,6 +786,9 @@ button{border: 0px solid black;background: transparent;}
             background-image: url(./asset/design/12.png);
             background-size: cover;
             background-position: 50% 50%;
+            .forhungury{
+                display: none;
+            }
             .about-content-wrap{
                 width: 100%;
                 padding: 10px 100px;
@@ -732,6 +802,14 @@ button{border: 0px solid black;background: transparent;}
                     overflow-wrap: break-word;
                     line-height: 30px;
                     color: white;
+                }
+            }
+
+            .dog-cook{
+                display: none;
+
+                img{
+                    display: none;
                 }
             }
         }
@@ -877,6 +955,13 @@ button{border: 0px solid black;background: transparent;}
         }
         }
 
+        .menu-footer{
+            display: none;
+            img{
+                
+            }
+        }
+
 
         .page-7{
             width: 100%;
@@ -960,6 +1045,9 @@ button{border: 0px solid black;background: transparent;}
             }
         
         }
+    }
+    .page-7-logo{
+        display: none;
     }
 
     footer{
